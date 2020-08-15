@@ -1,9 +1,11 @@
 @import "bootstrap";
 @import "animate";
+@import "https://fonts.googleapis.com/css2?family=PT+Sans&display=swap";
 
 body {
 	background: url('green.jpg') no-repeat center fixed;
   background-size: cover;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .navbar {
