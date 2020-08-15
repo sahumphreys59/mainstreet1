@@ -75,4 +75,4 @@ gem 'simple_form'
 gem 'devise'
 
 
-# gem 'sqlite3'
+gem 'sqlite3'
