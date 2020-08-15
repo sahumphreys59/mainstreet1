@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mainstreet1stGrade</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+  <br/>
+  <h1 class="title" align="center">Main Street 1st Grade</h1>
+ 
+  <nav class="navbar navbar-toggleable-md navbar-inverse bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     
+
+     
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+          <!-- <li class="nav-item">
+            <%= link_to 'New Post', new_post_path, class: 'links', :style=>'color:#FFFFFF;' %>
+          </li> -->
+          <li class="nav-item">
+            <%= link_to 'Helpful Tools', '#', class: 'links', :style=>'color:#FFFFFF;' %>
+          </li> 
+          <li class="nav-item">
+            <% if user_signed_in? %>
+              <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+            <% else %>
+              <%= link_to 'Admin', new_user_session_path %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+  
+    <%= yield %>
+  </body>
+</html>
+
+

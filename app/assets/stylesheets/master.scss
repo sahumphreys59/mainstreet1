@@ -1,0 +1,53 @@
+@import "bootstrap";
+
+
+
+body {
+	background: url('green.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+
+
+.navbar {
+	background: transparent;
+}
+
+.title {
+	font-size:70px; 
+	align: center; 
+	font-family: Permanent Marker, cursive;
+	background: -webkit-linear-gradient(red, yellow, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 40px;
+}
+
+
+.links {
+	padding: 20px;
+}
+
+.news {
+	
+}
+
+
+.frost {
+  background: rgba(0, 0, 0, 0.50);
+  border-radius: 25px;
+}
+
+.box {
+	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #022747;
+  border: 5px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+
+

@@ -1,0 +1,13 @@
+<div class="col-5 offset-3" style="color: white;" align="center">
+	<h2>Edit Post</h2>
+	<br/>
+	<%= simple_form_for @post do |f| %>
+		<%= f.input :title %>
+		<br/>
+		<%= f.input :post_date %>
+		<br/>
+		<%= f.input :message, :input_html => {:rows => 10, :cols => 55} %>
+		<br/>
+		<%= f.submit 'Post', class: 'btn btn-primary' %>
+	<% end %>
+</div>
