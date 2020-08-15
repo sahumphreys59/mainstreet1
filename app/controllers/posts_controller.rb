@@ -3,6 +3,7 @@ class PostsController < ApplicationController
 	
 	def index
 		@posts = Post.order('post_date desc')
+		@tools = Tool.all
 	end
 
 	def new

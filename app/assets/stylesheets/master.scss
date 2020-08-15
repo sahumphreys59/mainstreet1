@@ -1,12 +1,10 @@
 @import "bootstrap";
-
-
+@import "animate";
 
 body {
 	background: url('green.jpg') no-repeat center fixed;
   background-size: cover;
 }
-
 
 .navbar {
 	background: transparent;
@@ -20,15 +18,9 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-
 .links {
 	padding: 20px;
 }
-
-.news {
-	
-}
-
 
 .frost {
   background: rgba(0, 0, 0, 0.50);
@@ -48,4 +40,12 @@ body {
 }
 
 
+.tools {
+  background: #2036AA;
+  border-radius: 25px;
+}
+
+u {
+  color: white;
+}
 

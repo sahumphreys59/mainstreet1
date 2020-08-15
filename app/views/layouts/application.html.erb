@@ -12,7 +12,7 @@
 
   <body>
   <br/>
-  <div align="center">
+  <div align="center" class="animated fadeInLeft delay-2s">
     <%= link_to 'Main Street 1st Grade', root_path, class: 'title'%>
   </div>
   <!-- <h1 class="title" align="center">Main Street 1st Grade</h1> -->
@@ -29,9 +29,6 @@
           <!-- <li class="nav-item">
             <%= link_to 'New Post', new_post_path, class: 'links', :style=>'color:#FFFFFF;' %>
           </li> -->
-          <li class="nav-item">
-            <%= link_to 'Helpful Tools', '#', class: 'links', :style=>'color:#FFFFFF;' %>
-          </li> 
           <li class="nav-item">
             <% if user_signed_in? %>
               <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>

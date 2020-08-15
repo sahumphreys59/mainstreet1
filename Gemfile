@@ -75,5 +75,5 @@ gem 'simple_form'
 
 gem 'devise'
 
-
+gem 'animate.css-rails'
 

@@ -1,28 +1,61 @@
-
-	<div class="frost col-6 offset-3">
-		<br/>
-		<h2 style="color: #4089C9;" align="center"><u>Class News and Updates</u></h2>
-
-		<% if user_signed_in? %>
-			<%= link_to 'New Post', new_post_path, class: 'links btn btn-primary' %>
-		<% end %>
-
-		<br/>
-		<div class="col-10 offset-1" style="color: white;">
-			<% @posts.each do |post| %>
-				<% if user_signed_in? %>
-					<div style="float: right;">
-							<%= link_to 'Edit', edit_post_path(post), class: 'btn btn-primary' %>
-							<%= link_to 'Delete', post_path(post), method: :delete, data: {confirm: 'Are you sure you want to delete this?'},class: 'btn btn-danger' %>
-					</div>	
-				<% end %>
-				<br/>
-				<h4 align = "center"><b><u><%= post.title %></u></b></h4><%= post.post_date %><br/>
-				<h5><%= post.message %></h5>
-				<br/>
-					<hr/>
+<div class="row">
+	<div class="col-lg-6 offset-lg-2 col-sm-10 offset-sm-1 col-md-5">
+		<div class="frost">
+			<% if user_signed_in? %>
+				<%= link_to 'New Post', new_post_path, class: 'links btn btn-primary' %>
 			<% end %>
+			<br/>
+			<h2 style="color: #4089C9;" align="center">Class News and Updates:</h2>
+
+			
+
+			<br/>
+			<div style="color: white;">
+				<% @posts.each do |post| %>
+					<% if user_signed_in? %>
+						<div style="float: right;">
+								<%= link_to 'Edit', edit_post_path(post), class: 'btn btn-primary' %>
+								<%= link_to 'Delete', post_path(post), method: :delete, data: {confirm: 'Are you sure you want to delete this?'},class: 'btn btn-danger' %>
+						</div>	
+					<% end %>
+					<div style="padding-right: 50px; padding-left: 50px;">
+						<h4><b><u><%= post.title %></u></b></h4>
+						<div style="float:right;">
+							<%= post.post_date.strftime("%m/%d/%Y") %><br/>
+						</div>
+						<h5><%= post.message %></h5>
+					</div>
+					<br/>
+						<hr/>
+				<% end %>
+			</div>
 		</div>
+		<br/>
+		<br/>
 	</div>
-	<br/>
-	<br/>
+	<div class="col">
+		<div class="tools">
+			<% if user_signed_in? %>
+				<div style="float: left;">
+					<%= link_to 'New', new_tool_path, class: 'links btn btn-primary' %>
+				</div>
+			<% end %>
+			<br/>
+			<u><h4 style="color:white;" align="center">Helpful Tools</h4></u>
+			<br/>
+			<% @tools.each do |tool| %>
+				<% if user_signed_in? %>
+					<div style="float:right;">
+						<%= link_to 'Edit', edit_tool_path(tool), class: 'btn btn-primary' %>
+						<%= link_to 'Delete', tool_path(tool), method: :delete, data: {confirm: 'Are you sure you want to delete this?'}, class: 'btn btn-danger' %>
+					</div>
+				<% end %>	
+				<div style="padding-right: 50px; padding-left: 50px; color:white;">
+					<h6><%= tool.message %></h6>
+				</div>
+				<hr>
+			<% end %>
+			<br/>
+		</div>	
+	</div>
+</div>			
