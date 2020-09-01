@@ -4,6 +4,7 @@ class PostsController < ApplicationController
 	def index
 		@posts = Post.order('post_date desc')
 		@tools = Tool.all
+		@subscriber = Subscriber.new
 	end
 
 	def new

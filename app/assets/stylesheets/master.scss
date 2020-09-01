@@ -20,34 +20,34 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.links {
-	padding: 20px;
-}
-
 .frost {
-  background: rgba(0, 0, 0, 0.50);
-  border-radius: 25px;
+  background: rgba(54, 57, 242, 0.7);
+  border-radius: 10px;
+  border: 3px solid #ccc;
+  border-color: white;
 }
-
-.box {
-	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: #022747;
-  border: 5px solid #ccc;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  padding: 20px;
-}
-
 
 .tools {
-  background: #2036AA;
-  border-radius: 25px;
+  background: #212224;
+  border: 3px solid #ccc;
+  border-color: #212224;
+  border-radius: 0px;
 }
 
 u {
   color: white;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: black;
+}
+
+hr {
+  height: 1px;
+  background: white;
+  width: 75%;
 }
 

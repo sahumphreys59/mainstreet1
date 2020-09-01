@@ -77,3 +77,8 @@ gem 'devise'
 
 gem 'animate.css-rails'
 
+gem "letter_opener", :group => :development
+
+gem 'whenever'
+
+
