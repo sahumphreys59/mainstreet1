@@ -2,6 +2,7 @@ class PostsController < ApplicationController
 	before_action :authenticate_user!, except: :index
 	
 	def index
+		@post = Post.new
 		@posts = Post.order('post_date desc')
 		@tools = Tool.all
 		@subscriber = Subscriber.new
