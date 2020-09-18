@@ -39,65 +39,31 @@
 	</div>
 	<div class="col-lg-3 col-md-6">
 		<div class="tools">
-			<!-- <% if user_signed_in? %>
-				<div style="float: left;">
-					<%= link_to 'New Post', new_tool_path, class: 'links btn btn-primary' %>
-				</div>
-			<% end %>
-		-->
 			<br/>
-			<u><h4 style="color:white;" align="center">Helpful Links</h4></u>
-			<br/>
-			<!--
-			<% @tools.each do |tool| %>
-				<% if user_signed_in? %>
-					<div style="float:right;">
-						<%= link_to 'Edit', edit_tool_path(tool), class: 'btn btn-primary' %>
-						<%= link_to 'Delete', tool_path(tool), method: :delete, data: {confirm: 'Are you sure you want to delete this?'}, class: 'btn btn-danger' %>
-					</div>
-				<% end %>	
-				<br/>
-				<div style="padding-right: 50px; padding-left: 50px; color:white;"  align="center">
-					<h4><%= tool.message %></h4>
+			<b><u style="color: #048041;"><h3 style="color:#048041; font-weight: 900;" align="center">Helpful Links</h3></u></b>
+
+			<div class="classlinks">
+				<div align="center">
+					<h3 style="padding: 20px;"><a href="https://classroom.google.com/c/MTIzMDUzMzgxNzI4" target="_blank">Google Classroom</a></h3>
+
+					<h3 style="padding: 20px;"><a href="https://app.seesaw.me/#/login" target="_blank">Seesaw</a></h3>
+
+					<h3 style="padding: 20px;"><a href="https://www.kidsa-z.com/main/Login" target="_blank">Raz Kids</a></h3>
+
+					<h3 style="padding: 20px;"><a href="http://play.prodigygame.com/" target="_blank">Prodigy Math</a></h3>
 				</div>
-				<br/>
-				<hr>
-			<% end %>
-		-->
-		<div align="center">
-			<h3><a href="https://www.tasteofhome.com/article/10-amazing-facts-about-cheese-you-need-to-know/" target="_blank">Cheese Facts</a>
-			</h3>
-		</div>
+			</div>	
 			<br/>
 		</div>	
 	</div>
 </div>		
 
 
-<!-- <div id="footer">
-	<% if cookies[:saved_subscriber] %>
-		Thanks for signing up!
-	<% else %>
-	<div class="col-10 offset-1" align="center">
-		<br/>
-		<h4 style="color: white;">Enter your email if you'd like to recieve weekly updates</h4>
-		<%= simple_form_for @subscriber do |f| %>
-			<%= f.text_field :email, placeholder: 'Email'%>
-			<%= f.submit 'Join', class: 'btn btn-primary' %>
-		<% end %>
-	<% end %>
-	</div>
-	<br/>	
-</div> -->
-
-
-
-
 <!-- Modal -->
 <div class="modal fade" id="newPost" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header" style="background: blue;">
+      <div class="modal-header" style="background: #2896F7;">
       	<div  align="center">
         	<h5 class="modal-title" id="exampleModalLabel" style="color:white;">New Post</h5>
         </div>
